@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart login</title>
+    <style>
+        .main {
+            display: flex;
+            justify-content: center;
+            padding-top: 40px;
+        }
+
+        .login {
+            padding-right: 20px;
+            padding-bottom: 200px;
+            padding-left: 20px;
+            padding-top: 40px;
+            width: 450px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        input::placeholder {
+            font-size: 15px;
+        }
+
+        input[type="email"] {
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            margin-top: 3em;
+            padding-top: 15px;
+            padding-left: 15px;
+            padding-right: 15px;
+            width: 350px;
+            border-bottom: 1px solid rgba(128, 128, 128, 0.879);
+        }
+
+        input:focus {
+            outline: none;
+            border-bottom: 2px solid blue;
+            transition: 1s;
+        }
+
+        p {
+            font-size: small;
+            color: rgb(135, 135, 135);
+        }
+
+        span {
+            color: rgb(40, 116, 240);
+            cursor: pointer;
+        }
+
+        input[type="button"] {
+            background-color: rgb(251, 100, 27);
+            cursor: pointer;
+            padding: 20px;
+            width: 100%;
+            color: white;
+            font-weight: bold;
+            font-size: 15px;
+            border: none;
+        }
+
+        .newaccount p {
+            color: rgb(40, 116, 240);
+            font-size: 15px;
+            font-weight: 500;
+            text-align: center;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        .loginside {
+            width: 300px;
+            padding-top: 20px;
+            padding-left: 20px;
+            background-color: rgb(40, 116, 240);
+            color: white;
+        }
+
+        .loginside p {
+            color: rgba(255, 255, 255, 0.884);
+            font-size: 17px;
+
+        }
+
+        .loginside img {
+            width: 200px;
+            margin-top: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="loginside">
+            <h1>Login</h1>
+            <p>Get access to your Orders, Wishlist and Recommendations</p>
+            <center>
+                <img src="/assets/flipkart.PNG">
+            </center>
+        </div>
+        <div class="login">
+            <center>
+                <form>
+                    <input type="email" placeholder="Enter Email/Mobile number" required>
+                    <br><br>
+                    <p>By continuing, you agree to Flipkart's <span>Terms of Use</span> and <span>Policy Policy.</span>
+                    </p>
+                    <input type="button" value="Request OTP">
+                </form>
+            </center>
+            <div class="newaccount">
+                <p>New to Flipkart? Create an account</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
